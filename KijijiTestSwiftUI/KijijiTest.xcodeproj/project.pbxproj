@@ -27,6 +27,8 @@
 		F65E739223FA0CF1009DA57E /* ADCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65E739123FA0CF1009DA57E /* ADCell.swift */; };
 		F65E739D23FA276F009DA57E /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65E739C23FA276F009DA57E /* ImageView.swift */; };
 		F65E739F23FA28F8009DA57E /* URLImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65E739E23FA28F8009DA57E /* URLImage.swift */; };
+		F65E73A323FB5F50009DA57E /* CategoryCellViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65E73A223FB5F50009DA57E /* CategoryCellViewModelTests.swift */; };
+		F65E73A523FB6554009DA57E /* AdsListCellModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65E73A423FB6554009DA57E /* AdsListCellModelTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +75,8 @@
 		F65E739123FA0CF1009DA57E /* ADCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ADCell.swift; sourceTree = "<group>"; };
 		F65E739C23FA276F009DA57E /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
 		F65E739E23FA28F8009DA57E /* URLImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLImage.swift; sourceTree = "<group>"; };
+		F65E73A223FB5F50009DA57E /* CategoryCellViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCellViewModelTests.swift; sourceTree = "<group>"; };
+		F65E73A423FB6554009DA57E /* AdsListCellModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdsListCellModelTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +155,8 @@
 			children = (
 				F65E736223F9AA05009DA57E /* KijijiTestTests.swift */,
 				F65E736423F9AA05009DA57E /* Info.plist */,
+				F65E73A223FB5F50009DA57E /* CategoryCellViewModelTests.swift */,
+				F65E73A423FB6554009DA57E /* AdsListCellModelTest.swift */,
 			);
 			path = KijijiTestTests;
 			sourceTree = "<group>";
@@ -357,7 +363,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F65E73A323FB5F50009DA57E /* CategoryCellViewModelTests.swift in Sources */,
 				F65E736323F9AA05009DA57E /* KijijiTestTests.swift in Sources */,
+				F65E73A523FB6554009DA57E /* AdsListCellModelTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

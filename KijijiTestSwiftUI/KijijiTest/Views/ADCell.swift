@@ -14,7 +14,7 @@ struct ADCell: View {
     var body: some View {
         HStack(spacing: 10){
             ImageView(imageURL: viewModel.getImageUrlString(), placeholder: nil)
-            VStack {
+            VStack(alignment:.center) {
                 Text(viewModel.getTitle())
                 Text(viewModel.getPrice())
             }

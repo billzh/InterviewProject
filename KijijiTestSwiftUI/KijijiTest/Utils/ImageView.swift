@@ -20,7 +20,7 @@ struct ImageView: View {
     }
     
     var body: some View {
-        Image(uiImage: imageData.data.isEmpty ? placeholder : UIImage(data: imageData.data)!)
+        Image(uiImage: imageData.data.isEmpty ? placeholder : UIImage(data: imageData.data) ?? placeholder)
         .resizable()
         .frame(width: 100, height: 100, alignment: .center)
         .aspectRatio(contentMode: .fit)

@@ -8,6 +8,7 @@ struct ContentView: View {
             CategoriesListView(viewModel: self.viewModel.categories)
             .navigationBarTitle("Categories")
         }
+        .navigationViewStyle(StackNavigationViewStyle())
         .onAppear {
             self.viewModel.load()
         }

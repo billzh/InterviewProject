@@ -2,16 +2,20 @@
 import SwiftUI
 
 struct AdsListView: View {
-    @ObservedObject var viewmodel: AdsListViewModel
+    @ObservedObject var viewModel: AdsListViewModel
     var categoryName: String
     
     var body: some View {
-        List(self.viewmodel.adsList) { model in
+        List(self.viewModel.adsList) { model in
             ADCell(viewModel: AdsListCellModel(model))
         }
         .onAppear(){
-            self.viewmodel.load()
+            self.viewModel.load()
         }
         .navigationBarTitle(Text(categoryName), displayMode: .inline)
+        .alert(isPresented: $viewModel.isShowingAlert) {
+                  let message = viewModel.error?.localizedDescription ?? "Got network errors!!!"
+                  return Alert(title: Text("Error"), message: Text(message), dismissButton: .default(Text("OK")))
+        }
     }
 }
